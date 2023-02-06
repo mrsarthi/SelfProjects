@@ -9,13 +9,20 @@ body {
 
 }
 
+form {
+    display: grid;
+    padding: 10px 50px 30px 0;
+    position:
+}
+
+
 mark {
     position: relative;
     display: inline-block;
     -webkit-animation: 1.5s highlight 1.5s 1 normal forwards;
     animation: 1.5s highlight 1.5s 1 normal forwards;
     background-color: none;
-    background: linear-gradient(90deg, #ffd500 40%, rgba(255, 255, 255, 0) 50%);
+    background: linear-gradient(90deg, #ffd500 50%, rgba(255, 255, 255, 0) 50%);
     background-size: 200% 100%;
     background-position: 100% 0;
 }
