@@ -1,0 +1,19 @@
+{
+  "name": "jsbased_slot_machine",
+  "version": "1.0.0",
+  "description": "",
+  "main": "slot_machine.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrsarthi/SelfProjects.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrsarthi/SelfProjects/issues"
+  },
+  "homepage": "https://github.com/mrsarthi/SelfProjects#readme"
+}
