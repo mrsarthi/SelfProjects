@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/mrsarthi/SelfProjects/issues"
   },
-  "homepage": "https://github.com/mrsarthi/SelfProjects#readme"
+  "homepage": "https://github.com/mrsarthi/SelfProjects#readme",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
 }

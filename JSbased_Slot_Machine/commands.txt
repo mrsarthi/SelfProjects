@@ -1,0 +1,2 @@
+npm init-: to install the required package for this project
+npm i prompt-sync-: to Collect user input
