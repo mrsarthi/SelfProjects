@@ -1,13 +1,4 @@
-// 1. Despot some money
-// 2. Determine number of lines to bet on
-// 3. Collect a bet amount
-// 4. Spin the slot machine
-// 5. check if the user won
-// 6. give the user their winnings
-// 7. play again
-
-const prompt = require("prompt-sync")();
-
+const prompt = require("prompt-sync")()
 const ROWS = 3;
 const COLS = 3;
 
@@ -27,48 +18,32 @@ const SYMBOL_VALUES = {
 
 const deposit = () => {
   while (true) {
-    const depositAmount = prompt("Enter a deposit amount: ");
-    const numberDepositAmount = parseFloat(depositAmount);
-
-    if (isNaN(numberDepositAmount) || numberDepositAmount <= 0) {
-      console.log("Invalid deposit amount, try again.");
-    } else {
-      return numberDepositAmount;
-    }
+    const dep_amount = parseFloat(prompt("Enter the deposit amount: "))
+    // console.log(typeof(dep_amount))
+    if (isNaN(dep_amount) || dep_amount <= 0) console.log("Try again and enter a valid deposit amount ")
+    else return dep_amount
   }
-};
-
-const getNumberOfLines = () => {
+}
+const getBet = (amount, lines) => {
   while (true) {
-    const lines = prompt("Enter the number of lines to bet on (1-3): ");
-    const numberOfLines = parseFloat(lines);
-
-    if (isNaN(numberOfLines) || numberOfLines <= 0 || numberOfLines > 3) {
-      console.log("Invalid number of lines, try again.");
-    } else {
-      return numberOfLines;
-    }
+    const bet = parseInt(prompt("Enter the bet per line: "))
+    if (isNaN(bet) || bet > amount * lines || bet <= 0) console.log("Enter a bet per line ")
+    else return bet
   }
-};
+}
 
-const getBet = (balance, lines) => {
-  while (true) {
-    const bet = prompt("Enter the bet per line: ");
-    const numberBet = parseFloat(bet);
-
-    if (isNaN(numberBet) || numberBet <= 0 || numberBet > balance / lines) {
-      console.log("Invalid bet, try again.");
-    } else {
-      return numberBet;
-    }
-  }
-};
+const getnoofLines = () => {
+  const noofLines = parseInt(prompt("Enter no. of Lines to bet on: "))
+  // console.log(typeof(dep_amount))
+  if (isNaN(noofLines) || noofLines <= 0 || noofLines > 3) console.log("Invalid no. of Line, try again ")
+  else return noofLines
+}
 
 const spin = () => {
-  const symbols = [];
+  const symbols = []
   for (const [symbol, count] of Object.entries(SYMBOLS_COUNT)) {
     for (let i = 0; i < count; i++) {
-      symbols.push(symbol);
+      symbols.push(symbol)
     }
   }
 
