@@ -39,6 +39,14 @@ const getnoofLines = () => {
     else return noofLines
 }
 
+const spin = () => {
+    const symbols = [];
+    for (const [symbol, count] of Object.entries(SYMBOLS_COUNT)) {
+        for (let i = 0; i < count; i++) {
+            symbols.push(symbol);
+        }
+    }
+}
 var amount = deposit()
 var selected_lines = getnoofLines()
 var bet_amount = getBet(amount, selected_lines)
