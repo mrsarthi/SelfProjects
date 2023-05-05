@@ -115,7 +115,7 @@ const game = () => {
 
   while (true) {
     console.log("You have a balance of $" + balance);
-    const numberOfLines = getNumberOfLines();
+    const numberOfLines = getnoofLines();
     const bet = getBet(balance, numberOfLines);
     balance -= bet * numberOfLines;
     const reels = spin();
