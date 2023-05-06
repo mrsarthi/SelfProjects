@@ -1,0 +1,2 @@
+npm init-: json file initialization
+npm i prompt-sync-: package to take user input
