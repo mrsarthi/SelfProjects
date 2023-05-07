@@ -53,13 +53,6 @@ a {
     color: inherit;
 }
 
-.hero {
-    width: 100%;
-    height: 100vh;
-    background-color: whitesmoke;
-    position: relative;
-}
-
 .slider {
     width: 100%;
     height: 100vh;
@@ -74,7 +67,7 @@ a {
     height: 100%;
     position: relative;
     text-align: center;
-    transition: 0.5s;
+    transition: 1s;
 }
 
 .slider .slide:nth-child(1) {
@@ -82,6 +75,7 @@ a {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: left;
+    filter: blur(5px);
 }
 
 .slider .slide:nth-child(2) {
@@ -89,6 +83,7 @@ a {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: left;
+    filter: blur(5px);
 }
 
 .slider .slide:nth-child(3) {
@@ -96,6 +91,7 @@ a {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: left;
+    filter: blur(5px);
 }
 
 .slider .slide:nth-child(4) {
@@ -103,6 +99,7 @@ a {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: left;
+    filter: blur(5px);
 }
 
 .slider .slide:nth-child(5) {
@@ -110,9 +107,39 @@ a {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: left;
+    filter: blur(5px);
 }
 
-.slider .slide:hover {
+.slider {
+    text-transform: capitalize;
+}
+
+.slider .slide:nth-child(1):hover {
     width: 60%;
     cursor: pointer;
+    filter: blur(0);
+}
+
+.slider .slide:nth-child(2):hover {
+    width: 30%;
+    cursor: pointer;
+    filter: blur(0);
+}
+
+.slider .slide:nth-child(3):hover {
+    width: 55%;
+    cursor: pointer;
+    filter: blur(0);
+}
+
+.slider .slide:nth-child(4):hover {
+    width: 40%;
+    cursor: pointer;
+    filter: blur(0);
+}
+
+.slider .slide:nth-child(5):hover {
+    width: 40%;
+    cursor: pointer;
+    filter: blur(0);
 }
